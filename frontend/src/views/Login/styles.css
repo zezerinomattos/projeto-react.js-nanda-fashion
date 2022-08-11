@@ -1,0 +1,30 @@
+
+main.login-content{
+    width: 100%;
+    height: 100vh;
+    padding: 15px;
+    margin: auto;
+    background-color: #FEE1D1;
+}
+
+main form.form-signin h1{
+    color: #A65E52;
+    font-weight: bold;
+}
+
+main form.form-signin button.btn-login{
+    background-color: #A65E52;
+    border: none;
+    color: #FFFFFF;
+    transition: 1s ease-out;
+}
+
+main form.form-signin button.btn-login:hover{
+    background-color: #D12B30;
+}
+
+.recuperar-senha a{
+    font-size: 110%;
+    color: #D12B30;
+    text-decoration: none;
+}
