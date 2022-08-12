@@ -18,7 +18,7 @@ function Login() {
                 <input type="password" className="form-control my-2" id="floatingPassword" placeholder="Senha" />
                 
 
-                <button className="btn-login w-100 btn btn-lg btn-primary my-1" type="submit">Sign in</button>
+                <button className="btn-login w-100 btn btn-lg btn-primary my-1" type="button">Sign in</button>
                 <div className="recuperar-senha mt-3 text-center">
                     <a href="#">Esqueceu a Senha?</a>
                 </div>
