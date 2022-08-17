@@ -12,14 +12,15 @@ function Login() {
 
     const [email, setEmail] = useState();
     const [senha, setSenha] = useState();
+    const [msgTipo, setMsgtipo] = useState();
 
     function logar() {
         firebase.auth().signInWithEmailAndPassword(email, senha)
             .then(resultado => {
-                alert("Usuário Logado");
+                setMsgtipo('sucesso')
             })
             .catch(erro => {
-                alert(erro);
+                setMsgtipo('erro');
             });
     }
 
@@ -35,10 +36,14 @@ function Login() {
                 
                 <input type="password" className="form-control my-2" id="floatingPassword" placeholder="Senha" onChange={(e) => setSenha(e.target.value)} />
                 
-
                 <button onClick={logar} className="btn-login w-100 btn btn-lg btn-primary my-1" type="button">ENTRAR</button>
 
-                <div className="recuperar-senha mt-3 text-center">
+                <div className='msg-login my-3 text-center'>
+                    {msgTipo === 'sucesso' && <span><strong>Wow! </strong>Você está conectado!</span>}
+                    {msgTipo === 'erro' && <span><strong>Ops! </strong>Verifique se a senha ou o usuário estão corretos!</span>}
+                </div>
+
+                <div className="recuperar-senha mt-4 text-center">
                     <a href="#">Esqueceu a Senha?</a>
                 </div>
             </form>
