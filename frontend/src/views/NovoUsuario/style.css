@@ -1,0 +1,23 @@
+main.cadastro-mestre{
+    width: 100%;
+    height: 100vh;
+    background-color: #A65E52;
+}
+
+main.cadastro-mestre form.form-cadastro{
+    color: aliceblue;
+}
+
+main.cadastro-mestre form.form-cadastro button{
+    width: 100%;
+    background-color: #FEE1D1;
+    color: #A65E52;
+    font-weight: bold;
+    transition: 1s ease-out;
+}
+
+main.cadastro-mestre form.form-cadastro button:hover{
+    background-color: #175224;
+    color: #FEE1D1;
+    font-weight: bold;
+}
