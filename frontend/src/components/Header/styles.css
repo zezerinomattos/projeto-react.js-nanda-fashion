@@ -85,7 +85,7 @@ nav.nav-menu div.nav-menu-mestre ul li:hover > div.menu-icon{
     display: block;
 }
 
-nav.nav-menu div.nav-menu-mestre ul li a{
+nav.nav-menu div.nav-menu-mestre ul li a, li.btn-sair{
     color: #000000;
     font-size: 130%;
     font-family: 'Laila', sans-serif;
