@@ -1,8 +1,14 @@
 import React from 'react';
+import './style.css';
+
+//MEUS IMPORTS
+import Navbar from '../../components/Header';
 
 function Home(){
     return(
-        <h1>Home está OK</h1>
+        <>
+            <Navbar />
+        </>
     );
 }
 

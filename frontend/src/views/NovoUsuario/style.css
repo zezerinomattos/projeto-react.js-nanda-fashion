@@ -1,7 +1,12 @@
-main.cadastro-mestre{
+div.mestre{
     width: 100%;
     height: 100vh;
     background-color: #A65E52;
+    padding-top: 30px;
+}
+main.cadastro-mestre{
+    width: 100%;  
+    margin-top: 40px;
 }
 
 main.cadastro-mestre form.form-cadastro{
@@ -20,4 +25,22 @@ main.cadastro-mestre form.form-cadastro button:hover{
     background-color: #175224;
     color: #FEE1D1;
     font-weight: bold;
+}
+
+span.cadatro-retornar-home{
+   margin-left: 60px;
+}
+
+span.cadatro-retornar-home a{
+    color: #FEE1D1;
+    text-decoration: none;
+    font-size: 130%;
+    padding: 10px;
+    border-radius: 10%;
+    transition: .5s ease-out;
+}
+
+span.cadatro-retornar-home a:hover{
+    background-color: #FEE1D1;
+    color: #A65E52;
 }

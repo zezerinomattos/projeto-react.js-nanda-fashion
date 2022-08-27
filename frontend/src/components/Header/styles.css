@@ -1,0 +1,130 @@
+/*
+    Fontes
+    font-family: 'Laila', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+
+/*----------------------------------*/
+/*  ELEMENTOS DO NAV REDES SOCIAIS  */
+/*----------------------------------*/
+
+nav.nav-redes-sociais{
+    background-color: #FEE1D1;
+    padding-left: 8%;
+    border-bottom: 5px solid #A65E52;
+}
+
+nav.nav-redes-sociais ul li a ion-icon{
+    color: #A65E52;
+    font-size: 150%;
+    border-radius: 35%;
+    transition: .3s ease-in;
+    margin-bottom: -10px;
+}
+
+nav.nav-redes-sociais ul li a ion-icon:hover{
+    color: #D12B30;
+}
+
+/*----------------------------------*/
+/*  ELEMENTOS DO DIV LOGO           */
+/*----------------------------------*/
+
+div.header-Logo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.header-Logo hr{
+    background-color: #FE9E8E;
+    width: 30%;
+    border: none;
+    height: 2px;
+}
+
+div.header-Logo div.heder-logo-img{
+    width: 14%;
+    text-align: center;
+}
+
+div.header-Logo div.heder-logo-img img{
+    max-width: 100%;
+}
+
+/*----------------------------------*/
+/*  ELEMENTOS DO NAV MENU           */
+/*----------------------------------*/
+
+nav.nav-menu div.nav-menu-mestre{
+    width: 80%;
+}
+
+nav.nav-menu div.nav-menu-mestre ul li{
+    cursor: pointer;
+    transition: .3s;
+}
+
+nav.nav-menu div.nav-menu-mestre ul li:hover{
+    border-bottom: 2px solid #A65E52;
+    color: #A65E52;
+}
+
+nav.nav-menu div.nav-menu-mestre ul li div.menu-icon{
+    text-align: center;
+    width: 40%;
+    font-size: 30px;
+    color: #400707;
+    margin: auto;
+    transition: .5s ease;
+    display: none;
+}
+
+nav.nav-menu div.nav-menu-mestre ul li:hover > div.menu-icon{
+    display: block;
+}
+
+nav.nav-menu div.nav-menu-mestre ul li a{
+    color: #000000;
+    font-size: 130%;
+    font-family: 'Laila', sans-serif;
+
+    transition: .3s ease-out;
+}
+
+nav.nav-menu ul li ul.nav-ul-roupas{
+    display: none;
+    margin-left: 5px;
+}
+
+nav.nav-menu ul li ul.nav-ul-roupas{
+    background-color: #A65E52;
+}
+
+nav.nav-menu ul li ul.nav-ul-roupas li a:hover{
+    background-color: #FEE1D1;
+}
+
+nav.nav-menu ul li.nav-menu-roupas:hover > ul.nav-ul-roupas{
+    display: block;
+}
+
+form input.pesquisar{
+    border: 1px solid #A65E52;
+}
+
+form button.btn-pesquisa{
+    border: 2px solid #FEE1D1;
+    color: #A65E52;
+    background-color: #FEE1D1;
+    border: 1px solid #A65E52;   
+}
+
+form button.btn-pesquisa:hover{
+    background-color: #A65E52;
+    border: 2px solid #FEE1D1;
+}
+
+
+
