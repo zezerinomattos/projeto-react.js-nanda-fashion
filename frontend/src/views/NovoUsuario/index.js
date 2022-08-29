@@ -67,7 +67,7 @@ function NovoUsuario(){
                             :<button type='button' className='btn btn-lg btn-block mt-2 mb-5 btn-cadstro' onClick={Cadastrar} >CADASTRAR</button>
                         }   
 
-                        <div className='msg-login text-white text-center my-5'>
+                        <div className='msg-login text-center my-5'>
                             {msgTipo === 'sucesso' && <span><strong>Wow! </strong>Você cadstrou com sucesso! &#128526;</span>}
                             {msgTipo === 'erro' && <span><strong>Ops! </strong>{msg} &#128526;</span>}
                         </div>

@@ -9,6 +9,10 @@ main.cadastro-mestre{
     margin-top: 40px;
 }
 
+main.cadastro-mestre form h1{
+    color: #A65E52;
+}
+
 main.cadastro-mestre form.form-cadastro{
     color: aliceblue;
 }
@@ -43,4 +47,8 @@ span.cadatro-retornar-home a{
 span.cadatro-retornar-home a:hover{
     background-color: #FEE1D1;
     color: #A65E52;
+}
+
+main.cadastro-mestre form.form-cadastro div.msg-login{
+    color: #175224;
 }

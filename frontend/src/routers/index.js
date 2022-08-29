@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import Home from '../views/Home';
 import Login from "../views/Login";
 import NovoUsuario from "../views/NovoUsuario";
+import UsuarioRecuperarSenha from "../views/usuario-recuperar-senha";
 import store from "../store";
 
 export default function Rotas(){
@@ -15,6 +16,7 @@ export default function Rotas(){
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/novousuario" element={<NovoUsuario />} />
+                    <Route path="/usuariorecuperarsenha" element={<UsuarioRecuperarSenha />} />
                 </Routes>
         </BrowserRouter>
         </Provider>
