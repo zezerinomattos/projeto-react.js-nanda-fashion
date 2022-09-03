@@ -53,7 +53,7 @@ function Login() {
                 <input type="password" className="form-control my-2" id="floatingPassword" placeholder="Senha" onChange={(e) => setSenha(e.target.value)} />
 
                 {
-                    carregando ? <div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
+                    carregando > 0 ? <div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
                     :<button onClick={logar} className="btn-login w-100 btn btn-lg btn-primary my-1" type="button">ENTRAR</button>
                 }
                 
