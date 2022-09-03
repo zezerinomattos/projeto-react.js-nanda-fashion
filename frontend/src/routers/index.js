@@ -6,6 +6,7 @@ import Home from '../views/Home';
 import Login from "../views/Login";
 import NovoUsuario from "../views/NovoUsuario";
 import UsuarioRecuperarSenha from "../views/usuario-recuperar-senha";
+import CadastrarProdutos from "../views/Cadastrar-produtos";
 import store from "../store";
 
 export default function Rotas(){
@@ -17,6 +18,7 @@ export default function Rotas(){
                     <Route path="/login" element={<Login />} />
                     <Route path="/novousuario" element={<NovoUsuario />} />
                     <Route path="/usuariorecuperarsenha" element={<UsuarioRecuperarSenha />} />
+                    <Route path="/cadastrarprodutos" element={<CadastrarProdutos />} />
                 </Routes>
         </BrowserRouter>
         </Provider>
