@@ -147,7 +147,7 @@ function CadastrarProdutos (){
             <div className='msg-login my-5 text-center'>
                     {msgTipo === 'sucesso' && <span><strong>Wow! </strong>Produto Publicado!</span>}
                     {msgTipo === 'erro' && <span><strong>Ops! </strong>Não foi possivel publicar esse produto!</span>}
-                </div>
+            </div>
 
         </>
     );
