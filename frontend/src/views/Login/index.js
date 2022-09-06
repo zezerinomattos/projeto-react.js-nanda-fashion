@@ -52,10 +52,12 @@ function Login() {
                 
                 <input type="password" className="form-control my-2" id="floatingPassword" placeholder="Senha" onChange={(e) => setSenha(e.target.value)} />
 
-                {
-                    carregando > 0 ? <div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
-                    :<button onClick={logar} className="btn-login w-100 btn btn-lg btn-primary my-1" type="button">ENTRAR</button>
-                }
+                <div className='row'>
+                    {
+                        carregando > 0 ? <div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span></div>
+                        :<button onClick={logar} className="btn-login w-100 btn btn-lg btn-primary my-1" type="button">ENTRAR</button>
+                    }
+                </div>
                 
                 <div className='msg-login my-3 text-center'>
                     {msgTipo === 'sucesso' && <span><strong>Wow! </strong>Você está conectado!</span>}

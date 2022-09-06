@@ -4,13 +4,18 @@ import './style.css';
 
 //MEUS IMPORTS
 import Navbar from '../../components/Header';
+import BannerCard from '../../components/Banner-Card';
 
 function Home(){
     return(
         <>
             <Navbar />
-            <h1>Logado: {useSelector(state => state.usuarioEmail)}</h1>
-            <h1>Logado: {useSelector(state => state.usuarioLogado)}</h1>
+            <main className='col-12 my-5'>
+                <section className='banner-apresentação-inicial mx-auto'>
+                    <BannerCard />
+                </section>
+                
+            </main>
         </>
     );
 }

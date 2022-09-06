@@ -134,11 +134,13 @@ function CadastrarProdutos (){
                     <label>Upload da Imagem</label>
                     <input type="file" className="form-control" onChange={(e) => setImagen(e.target.files [0])}/>
                 </div>
-
-                {
-                    carregando > 0 ? <div class="spinner-border text-warning text-center" role="status"><span class="visually-hidden">Loading...</span></div>
-                    : <button className="btn-login w-100 btn btn-lg btn-primary my-1" type="button" onClick={cadastrarProduto}>Publicar Produto</button>
-                }
+                
+                <div className="row">
+                    {
+                        carregando > 0 ? <div class="spinner-border text-warning text-center" role="status"><span class="visually-hidden">Loading...</span></div>
+                        : <button className="btn-login w-100 btn btn-lg btn-primary my-1" type="button" onClick={cadastrarProduto}>Publicar Produto</button>
+                    }
+                </div>
 
             </form>
 
