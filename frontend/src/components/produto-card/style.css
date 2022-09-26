@@ -1,0 +1,75 @@
+div.card-img-mestre{
+    height: 320px;
+}
+
+img.img-cartao{ 
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+div.card-body{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+div.card-body div.valores{
+    justify-content: center;
+}
+
+div.card-body div.valores div.valor-mestre-de hr{
+    width: 4rem;
+    height: 3px;
+    background-color: #000000;
+    border: none;
+    margin-bottom: -.8rem;
+    margin-left: 1rem;
+
+    z-index: 999;
+}
+
+div.card-body div.valores div.valor-mestre-de{
+    margin-top: -.3rem;
+}
+
+div.card-body h5.card-titulo{
+    color: #707070;
+    font-weight: bold;
+}
+
+div.card-body p.card-text{
+    max-height: 50px;
+    overflow: hidden;
+    line-height: 1.4;
+    color: #707070;
+    font-size: 100%;
+}
+
+div.card-body div.valores .valor-por{
+    color: #A65E52;
+}
+
+div.card-body div.valores .valor-de{
+    color: #707070;
+}
+
+div.rodape-card{
+    color: #ffffff;
+}
+
+div.card-body div.rodape-card a.btn-detalhes{
+    background-color: #A65E52;
+    color: #ffffff;
+    font-size: 110%;
+    font-weight: bold;
+    padding: 5px 40px;
+    border-radius: 10px;
+
+    transition: .5s ease-in-out;
+}
+
+div.card-body div.rodape-card a.btn-detalhes:hover{
+    background-color: #FEE1D1;
+    color: #A65E52;
+}

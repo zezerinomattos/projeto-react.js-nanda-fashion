@@ -73,7 +73,8 @@ function CadastrarBanners(){
 
                 <div className="form-group mb-5">
                     <label>Upload da Imagem</label>
-                    <input type="file" className="form-control" onChange={(e) => setImagen(e.target.files [0])}/>
+                    <input type="file" className="form-control"  onChange={(e) => setImagen(e.target.files [0])}/>
+                    {console.log(imagem)}
                 </div>
 
                 <div className="row">

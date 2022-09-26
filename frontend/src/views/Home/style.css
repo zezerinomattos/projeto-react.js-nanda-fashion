@@ -1,0 +1,21 @@
+
+/*--------------------------*/
+/*   SECTION OFERTAS       */
+/*--------------------------*/
+
+section.produto-ofertas h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #FE9E8E;
+}
+
+div.produto-ofertas-mestre{
+    width: 100%;
+    margin: auto;
+    border: 2px solid #707070;
+    padding: 20px 4%;
+}
+
+/*--------------------------*/
+/*   SECTION TENDENCIA       */
+/*--------------------------*/

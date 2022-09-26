@@ -57,6 +57,7 @@ function Navbar(){
                                         <li class="nav-item"><div className="menu-icon"><ion-icon name="chatbubble-ellipses"></ion-icon></div><Link class="nav-link" to="#">Contato</Link></li>
 
                                         <li class="nav-item"><div className="menu-icon"><ion-icon name="person-add"></ion-icon></div><Link class="nav-link" to="/cadastrarprodutos">Cadastrar Produtos</Link></li>
+                                        <li class="nav-item"><div className="menu-icon"><ion-icon name="person-add"></ion-icon></div><Link class="nav-link" to="/cadastrarbanners">Cadastrar Banner</Link></li>
 
                                         <li class="nav-item"><div className="menu-icon"><ion-icon name="person-add"></ion-icon></div><Link class="nav-link" to="/novousuario">Cadastrar Usuário</Link></li>
                                         <li class="nav-item nav-link btn-sair" onClick={() => dispatch({type: 'LOG_OUT'})}><div className="menu-icon"><ion-icon name="close-circle"></ion-icon></div> Sair</li>
