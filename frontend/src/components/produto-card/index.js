@@ -33,7 +33,7 @@ function ProdutoCard({key, id, titulo, descricao, promocao, valor, img}){
                 </div>
                 <div className="row rodape-card align-items-center">
                     <div className="col-12">
-                        <Link to='/' className="btn btn-sm btn-detalhes mb-2">+ DETALHES</Link>
+                        <Link to={'/produtosdetalhes/' + id} className="btn btn-sm btn-detalhes mb-2">+ DETALHES</Link>
                     </div>
                 </div>
                 

@@ -19,3 +19,37 @@ div.produto-ofertas-mestre{
 /*--------------------------*/
 /*   SECTION TENDENCIA       */
 /*--------------------------*/
+
+section.produto-tendencia h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #FE9E8E;
+}
+
+div.produto-tendencia-mestre{
+    width: 100%;
+    margin: auto;
+    border: 2px solid #707070;
+    padding: 20px 4%;
+}
+
+/*--------------------------*/
+/*   SECTION MAIS VENDIDOS  */
+/*--------------------------*/
+
+section.mais-vendidos{
+    
+}
+
+div.mais-vendidos-mestre h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #FE9E8E;
+}
+
+div.mais-vendidos-d{
+    width: 100%;
+    margin: auto;
+    border: 2px solid #707070;
+    padding: 20px 4%;
+}

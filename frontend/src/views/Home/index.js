@@ -42,13 +42,32 @@ function Home(){
             <Navbar />
             <main className='col-12 my-5'>
                 <section className='banner-apresentação-inicial mx-auto row'>
-                    <BannerCard banners={banners}/>       
+                          
                 </section>
 
                 <section className='row produto-ofertas'>
                     <h2>OFERTAS</h2>
                     <div className='row produto-ofertas-mestre'>
-                        {produtos.map(item => item.destacar === "Sim" && item.secaoDestacar === "Ofertas" && <ProdutoCard key={item.id} titulo={item.nomeProduto} img={item.imagem} descricao={item.descricao} promocao={item.promocao} valor={item.valor} />)}
+                        {produtos.map(item => item.secaoDestacar === "Ofertas" ? <ProdutoCard id={item.id} titulo={item.nomeProduto} descricao={item.descricao} 
+                            promocao={item.promocao} valor={item.valor} img={item.imagem} /> : null)} 
+                    </div>
+                </section>
+
+                <section className='row produto-tendencia mt-5'>
+                    <h2>TENDÊNCIA</h2>
+                    <div className='row produto-d-mestre'>
+                        {produtos.map(item => item.secaoDestacar === "Tendência" ? <ProdutoCard id={item.id} titulo={item.nomeProduto} descricao={item.descricao} 
+                            promocao={item.promocao} valor={item.valor} img={item.imagem} /> : null)} 
+                    </div>
+                </section>
+
+                <section className='row mais-vendidos mt-5'>
+                    <div className='row mais-vendidos-mestre mt-5'>
+                        <h2>MAIS VENDIDOS</h2>
+                        <div className='row mais-vendidos-d'>
+                            {produtos.map(item => item.secaoDestacar === "Mais vendidos" ? <ProdutoCard id={item.id} titulo={item.nomeProduto} descricao={item.descricao} 
+                                promocao={item.promocao} valor={item.valor} img={item.imagem} /> : null)} 
+                        </div>
                     </div>
                 </section>
                 
@@ -61,3 +80,7 @@ function Home(){
 }
 
 export default Home;
+
+//(item.secaoDestacar === "Tendência")   item.destacar === "Sim"   <BannerCard banners={banners}/> 
+
+// MAIS VENDIDOS
