@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useSelector} from 'react-redux';
 
 //MEUS IMPORTS
@@ -18,18 +18,22 @@ function Home(){
     const [produtos, setProdutos] = useState([]);
     let listaProdutos = [];
 
+    const [pesquisa, setPesquisa] = useState('');
+
     useEffect(() =>{
         firebase.firestore().collection('nanda_fashion').get()
             .then(async(resposta) =>{
                 await resposta.docs.forEach(doc => {
-                    listaBanners.push({
-                        id: doc.id,
-                        ...doc.data()
-                    })
-                    listaProdutos.push({
-                        id: doc.id,
-                        ...doc.data()
-                    })
+                    if(doc.data().nomeProduto.indexOf(pesquisa) >= 0){
+                        listaBanners.push({
+                            id: doc.id,
+                            ...doc.data()
+                        })
+                        listaProdutos.push({
+                            id: doc.id,
+                            ...doc.data()
+                        })
+                    }
                 })
                 setBanners(listaBanners);
                 setProdutos(listaProdutos);
@@ -40,6 +44,11 @@ function Home(){
     return(
         <>
             <Navbar />
+
+            <form class="d-flex my-5 mx-auto col-11">
+                <input onChange={(e) => setPesquisa(e.target.value)} class="form-control me-2 pesquisar" type="search" placeholder="Pesquisar" />
+            </form>
+
             <main className='col-12 my-5'>
                 <section className='banner-apresentação-inicial mx-auto row'>
                           

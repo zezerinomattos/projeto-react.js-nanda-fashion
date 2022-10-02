@@ -77,6 +77,8 @@ function CadastrarBanners(){
                     {console.log(imagem)}
                 </div>
 
+                {imagem ? <img src={URL.createObjectURL(imagem)} alt="Imagem" width="150" height="100" /> : ""}
+
                 <div className="row">
                     {
                         carregando > 0 ? <div class="spinner-border text-warning text-center" role="status"><span class="visually-hidden">Loading...</span></div>

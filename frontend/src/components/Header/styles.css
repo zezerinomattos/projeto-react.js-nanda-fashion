@@ -114,17 +114,7 @@ form input.pesquisar{
     border: 1px solid #A65E52;
 }
 
-form button.btn-pesquisa{
-    border: 2px solid #FEE1D1;
-    color: #A65E52;
-    background-color: #FEE1D1;
-    border: 1px solid #A65E52;   
-}
 
-form button.btn-pesquisa:hover{
-    background-color: #A65E52;
-    border: 2px solid #FEE1D1;
-}
 
 
 

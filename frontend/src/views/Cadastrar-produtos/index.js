@@ -134,6 +134,8 @@ function CadastrarProdutos (){
                     <label>Upload da Imagem</label>
                     <input type="file" className="form-control" onChange={(e) => setImagen(e.target.files [0])}/>
                 </div>
+
+                {imagem ? <img src={URL.createObjectURL(imagem)} alt="Imagem" width="150" height="100" /> : ""}
                 
                 <div className="row">
                     {
