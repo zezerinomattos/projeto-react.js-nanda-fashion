@@ -9,6 +9,7 @@ import UsuarioRecuperarSenha from "../views/usuario-recuperar-senha";
 import CadastrarProdutos from "../views/Cadastrar-produtos";
 import CadastrarBanners from "../views/Cadastrar-banners";
 import BannerCard from "../components/Banner-Card";
+import ProdutosDetalhes from "../views/Produtos-detalhes";
 
 
 import store from "../store";
@@ -25,6 +26,7 @@ export default function Rotas(){
                     <Route path="/cadastrarprodutos" element={<CadastrarProdutos />} />
                     <Route path="/cadastrarbanners" element={<CadastrarBanners />} />
                     <Route path="/bannercard" element={<BannerCard />} />
+                    <Route path="/produtosdetalhes" element={<ProdutosDetalhes />} />
                     
                 </Routes>
         </BrowserRouter>

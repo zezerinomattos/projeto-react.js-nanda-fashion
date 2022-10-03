@@ -1,0 +1,51 @@
+img.img-produto{
+    width: 35%;
+    min-height: 600px;
+    max-height: 600px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+div.box-info{
+    color: #FE9E8E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+div.box-info h2{
+    color: #2F5936;
+}
+
+div.box-detalhes p{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 80px;
+    line-height: 1.8;
+}
+
+a.btn-comprar{
+    text-decoration: none;
+    background-color: #2F5936;
+    color: #FE9E8E;
+    padding: 10px 50px;
+
+    font-size: 150%;
+    border-radius: 10px;
+    transition: .3s ease-out;
+}
+
+a.btn-comprar:hover{
+    background-color: #508d5a;
+    color: #e9cfcb;
+}
+
+a.btn-editar ion-icon{
+    font-size: 350%;
+    transition: .3s ease-out;
+}
+
+a.btn-editar ion-icon:hover{
+    color: #913f3f;
+}
