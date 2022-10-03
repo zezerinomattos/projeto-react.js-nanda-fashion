@@ -6,6 +6,10 @@ img.img-produto{
     margin-top: 80px;
 }
 
+div.visualizações{
+    color: #913f3f;
+}
+
 div.box-info{
     color: #FE9E8E;
     display: flex;
