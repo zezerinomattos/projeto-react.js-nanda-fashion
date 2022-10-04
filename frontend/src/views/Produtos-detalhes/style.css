@@ -8,6 +8,15 @@ img.img-produto{
 
 div.visualizações{
     color: #913f3f;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.visualizações ion-icon{
+    font-size: 150%;
+    margin-right: 10px;
 }
 
 div.box-info{
