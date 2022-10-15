@@ -6,14 +6,10 @@ import { useSelector} from 'react-redux';
 import './style.css';
 import firebase from '../../config/firebase';
 import Navbar from '../../components/Header';
-import BannerCard from '../../components/Banner-Card';
 import ProdutoCard from '../../components/produto-card';
 import Footer from '../../components/Footer';
 
 function Home(){
-
-    const [banners, setBanners] = useState([]);
-    let listaBanners = [];
 
     const [produtos, setProdutos] = useState([]);
     let listaProdutos = [];
@@ -25,17 +21,12 @@ function Home(){
             .then(async(resposta) =>{
                 await resposta.docs.forEach(doc => {
                     if(doc.data().nomeProduto.indexOf(pesquisa) >= 0){
-                        listaBanners.push({
-                            id: doc.id,
-                            ...doc.data()
-                        })
                         listaProdutos.push({
                             id: doc.id,
                             ...doc.data()
                         })
                     }
                 })
-                setBanners(listaBanners);
                 setProdutos(listaProdutos);
             })
     });
